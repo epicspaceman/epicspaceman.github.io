@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Robert Lockay</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body onload="typewriter()">
+        <div class="navbar">
+            <ul>
+                <li id="title"><a href="./index.html">C:\Users\Robert Lockay></a></li>
+                <li><a href="./portfolio.html">Portfolio</a></li>
+                <li><a href="./aboutme.html">About Me</a></li>
+            </ul>
+        </div>
+
+        <div class="header">
+            <h1 id="typewriter"></h1>
+            <p>Hello! These are some of the projects I've worked on, classwork I think is standout, or creations I think are cool.</p>
+            <h1>School Projects</h1>
+        </div>
+
+        <div id="calc_embeds">
+            <h2>Calculator (Comp Sci 1)</h2>
+            <p>Created as my first semester final for Computer Science 1, I used Java Swing to create an calaculator with a functioning GUI.</p>
+            <iframe width="700" height="500" src="https://codehs.com/sandbox/id/fall-final-project-3lyBLX/embed/?display_mode=editorOnly&read_only=True" frameborder="0" allowfullscreen class="video-iframe"></iframe>
+            <iframe width="400" height="500" src="https://codehs.com/sandbox/id/fall-final-project-3lyBLX/embed/?display_mode=displayOnly&read_only=True&show_file_tree=False" frameborder="0" allowfullscreen class="video-iframe"></iframe>
+        </div>
+
+        <div id="game_embeds">
+            <h2>Black Death Game (AP World History)</h2>
+            <p>Created for an assignment asking us to represent the Black Death in some way, I decided to create a small game with Pygame, in one day.</p>
+            <iframe frameborder="0" width="800" height="750" src="https://replit.com/@RobertLockay/Black-Death-Game-1?embed=true"></iframe>
+        </div>
+
+        <script>
+            var i = 0;
+            var text = 'My Portfolio';
+
+            function typewriter() {
+                if (i < text.length){
+                    document.getElementById("typewriter").innerHTML += text.charAt(i);
+                    i++;
+                }
+                setTimeout(typewriter, 150);
+}
+        </script>
+    </body>
+</html>
